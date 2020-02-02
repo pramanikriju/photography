@@ -4695,7 +4695,8 @@ input, select, textarea {
 } */
 
 .grid-item {
-  float: left;
+    float: left;
+    padding: 5px;
 }
 
 .grid-item img {

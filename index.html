@@ -203,9 +203,7 @@
                         <div class="grid-item">
                             <a href="images/gallery/12.jpg"><img src="images/gallery/12.jpg" alt="" title="" /></a>
                         </div>
-                        <div class="grid-item">
-                            <a href="images/gallery/6.jpg"><img src="images/gallery/6.jpg" alt="" title="" /></a>
-                        </div>
+                     
                         <div class="grid-item">
                             <a href="images/gallery/7.jpg"><img src="images/gallery/7.jpg" alt="" title="" /></a>
                         </div>
@@ -266,6 +264,11 @@
                    <!--
                         <div class="grid-item">
                             <a href="images/gallery/8.jpg"><img src="images/gallery/8.jpg" alt="" title="" /></a>
+                        </div>
+-->
+<!--
+                      <div class="grid-item">
+                            <a href="images/gallery/6.jpg"><img src="images/gallery/6.jpg" alt="" title="" /></a>
                         </div>
 -->
                     </div>
@@ -441,7 +444,9 @@
         var $grid = $('.grid').masonry({
             itemSelector: '.grid-item',
             percentPosition: true,
-            columnWidth: '.grid-sizer'
+            columnWidth: '.grid-sizer',
+            //horizontalOrder: true
+
         });
 
         // layout Masonry after each image loads
