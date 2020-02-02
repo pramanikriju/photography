@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Riju Pramanik Photography
+	riju.co | @pramanikriju
 -->
 <html>
 
@@ -203,7 +202,7 @@
                         <div class="grid-item">
                             <a href="images/gallery/12.jpg"><img src="images/thumbs/12.jpg" alt="" title="" /></a>
                         </div>
-                     
+
                         <div class="grid-item">
                             <a href="images/gallery/7.jpg"><img src="images/thumbs/7.jpg" alt="" title="" /></a>
                         </div>
@@ -217,7 +216,7 @@
                         <div class="grid-item">
                             <a href="images/gallery/11.jpg"><img src="images/thumbs/11.jpg" alt="" title="" /></a>
                         </div>
-                        
+
                         <div class="grid-item">
                             <a href="images/gallery/13.jpg"><img src="images/thumbs/13.jpg" alt="" title="" /></a>
                         </div>
@@ -251,22 +250,22 @@
                             <a href="images/gallery/24.jpg"><img src="images/thumbs/24.jpg" alt="" title="" /></a>
                         </div>
 
-                   <!--
+                        <!--
                         <div class="grid-item">
                             <a href="images/gallery/16.jpg"><img src="images/thumbs/16.jpg" alt="" title="" /></a>
                         </div>
 -->
-                   <!--
+                        <!--
                         <div class="grid-item">
                             <a href="images/gallery/20.jpg"><img src="images/thumbs/20.jpg" alt="" title="" /></a>
                         </div>
 -->
-                   <!--
+                        <!--
                         <div class="grid-item">
                             <a href="images/gallery/8.jpg"><img src="images/thumbs/8.jpg" alt="" title="" /></a>
                         </div>
 -->
-<!--
+                        <!--
                       <div class="grid-item">
                             <a href="images/gallery/6.jpg"><img src="images/thumbs/6.jpg" alt="" title="" /></a>
                         </div>
@@ -343,7 +342,6 @@
                                     q.parentNode.insertBefore(js, q)
                                 }
                             })()
-
                         </script>
                     </header>
 
@@ -384,7 +382,6 @@
             <ul>
                 <li>&copy; <script>
                         document.write(new Date().getFullYear())
-
                     </script>
                 </li>
                 <li>Design: <a href="https://riju.co">Riju Pramanik</a></li>
@@ -440,23 +437,23 @@
                 }
             });
 
-        // init Masonry
-        var $grid = $('.grid').masonry({
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            columnWidth: '.grid-sizer',
-            //horizontalOrder: true
+        $(function() {
+            // init Masonry
+            var $grid = $('.grid').masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer',
+                //horizontalOrder: true
+
+            });
+
+            // layout Masonry after each image loads
+            $grid.imagesLoaded().progress(function() {
+                $grid.masonry();
+            });
+            var lightbox = $('.grid-item a').simpleLightbox();
 
         });
-
-        // layout Masonry after each image loads
-        $grid.imagesLoaded().progress(function() {
-            $grid.masonry();
-        });
-        var lightbox = $('.grid-item a').simpleLightbox();
-
     </script>
 
-</body>
-
-</html>
+</body></html>
